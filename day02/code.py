@@ -24,13 +24,11 @@ result_pt2 = [
 ]
 ldw = [0,3,6]
 
-guide = {}
 total_score = 0
 total_score_pt2 = 0
 for line in lines:
     # pt1
     enemy, hero = line.split(' ')
-    guide[enemy] = hero
     score = result[play[enemy]][play[hero]]
     total_score = total_score + score + play[hero] + 1
 
