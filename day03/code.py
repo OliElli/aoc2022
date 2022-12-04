@@ -26,8 +26,6 @@ for line in lines:
     pt1 = pt1 + get_priority(item)
 
     # Pt2
-
-
     group[group_counter] = line
     if group_counter == 2:
         badge = (set(group[0]) & set(group[1]) & set(group[2])).pop()
@@ -35,7 +33,6 @@ for line in lines:
         group_counter = 0
     else:
         group_counter = group_counter + 1
-
 
 print(f'Pt1 {pt1}')
 print(f'Pt2 {pt2}')
