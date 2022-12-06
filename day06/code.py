@@ -18,6 +18,7 @@ for char in lines[0]:
     if len(chars2) == 14:
         if len(set(chars2)) == len(chars2):
             print(f"Pt1: {count}")
+            break
         else:
             chars2 = chars2[1:]
     count += 1
